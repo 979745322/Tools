@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.lyg.tools">
-
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".diary.DiaryList"></activity>
+        <activity android:name=".diary.DiaryEdit"></activity>
+        <activity android:name=".diary.DiaryList" />
         <activity android:name=".diary.Password" />
         <activity android:name=".MainActivity">
             <intent-filter>

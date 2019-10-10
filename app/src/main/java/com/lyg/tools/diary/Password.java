@@ -26,25 +26,30 @@ public class Password extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_password);
         editText = findViewById(R.id.editText);
-
+        setTitle("日记");
         // 检查是否有密码文件，没有则创建
         sp = getSharedPreferences("diary", Context.MODE_APPEND);
         pwd = sp.getString("password","");
-
-        if(pwd.equals("")){ // 如果没有设置密码，直接进入日记列表页面
+        if(pwd.equals("")&&getIntent().getStringExtra("struts")==null){ // 如果没有设置密码，直接进入日记列表页面
             // 进日记列表页面
             startActivity(new Intent(this,DiaryList.class));
+            finish();
         }
     }
 
     public void login(View view) {
-
-        if(pwd.equals(editText.getText().toString())){ // 密码正确
-            // 进日记列表页面
-            startActivity(new Intent(this,DiaryList.class));
-        }else{ // 密码错误
-            editText.setText("");
-            Toast.makeText(this,"密码输入错误，请重新输入！！！",Toast.LENGTH_SHORT).show();
+        if(getIntent().getStringExtra("struts")==null) {
+            if (pwd.equals(editText.getText().toString())) { // 密码正确
+                // 进日记列表页面
+                startActivity(new Intent(this, DiaryList.class));
+                finish();
+            } else { // 密码错误
+                editText.setText("");
+                Toast.makeText(this, "密码输入错误，请重新输入！！！", Toast.LENGTH_SHORT).show();
+            }
+        }else{
+            sp.edit().putString("password",editText.getText().toString()).apply();
+            finish();
         }
     }
 }

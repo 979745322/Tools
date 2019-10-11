@@ -17,8 +17,12 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * 日记功能
+     * @param view
+     */
     public void diary(View view) {
-        // 进入密码界面
+        // 进入日记密码界面
         startActivity(new Intent(this, Password.class));
     }
 }

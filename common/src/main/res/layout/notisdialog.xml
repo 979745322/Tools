@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#aa333333"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@drawable/bg_round_white"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="270dp"
+        android:layout_height="170dp">
+
+        <TextView
+            android:id="@+id/text_notis"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="提示"
+            android:textColor="#000" />
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#999"
+                android:id="@+id/view3" />
+
+            <RelativeLayout
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/relativeLayout3">
+
+                <TextView
+                    android:id="@+id/text_ds_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/view_ds_shu"
+                    android:layout_toStartOf="@+id/view_ds_shu"
+                    android:gravity="center"
+                    android:text="确认"
+                    android:textSize="16sp"
+                    android:textColor="#000" />
+
+                <View
+                    android:layout_centerHorizontal="true"
+                    android:background="#999"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/view_ds_shu" />
+
+                <TextView
+                    android:textSize="16sp"
+                    android:id="@+id/text_ds_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_toEndOf="@+id/view_ds_shu"
+                    android:layout_toRightOf="@+id/view_ds_shu"
+                    android:gravity="center"
+                    android:text="取消"
+                    android:textColor="#000" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

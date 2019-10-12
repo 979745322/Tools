@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="100dp">
+
+    <TextView
+        android:id="@+id/joke_text"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <VideoView
+        android:id="@+id/joke_video"
+        android:background="#00ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@id/joke_text"/>
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        fresco:overlayImage="@drawable/play1000"
+        android:layout_marginTop="0dp"
+        android:id="@+id/joke_img"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@id/joke_text"/>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/joke_btn_collect"
+        android:layout_below="@id/joke_img"
+        android:layout_alignParentEnd="true"
+        android:background="#123456" />
+</RelativeLayout>

@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.lyg.tools.diary.Password;
+import com.lyg.tools.joke.JokeActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,5 +25,14 @@ public class MainActivity extends AppCompatActivity {
     public void diary(View view) {
         // 进入日记密码界面
         startActivity(new Intent(this, Password.class));
+    }
+
+    /**
+     * 段子功能
+     * @param view
+     */
+    public void joke(View view) {
+        // 进入段子界面
+        startActivity(new Intent(this, JokeActivity.class));
     }
 }

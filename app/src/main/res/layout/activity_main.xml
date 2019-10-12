@@ -36,12 +36,13 @@
                 android:layout_marginTop="8dp"
                 android:drawableTop="@drawable/diary2"
                 android:gravity="center"
-                android:text="日记"
+                android:text="段子"
+                android:onClick="joke"
                 android:textSize="22sp"
                 android:textStyle="bold"
                 android:layout_alignParentEnd="true"
                  />
-            <TextView
+            <!--<TextView
                 android:id="@+id/diary3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -123,7 +124,7 @@
                 android:textSize="22sp"
                 android:textStyle="bold"
                 android:layout_below="@id/diary6"
-                android:layout_alignParentEnd="true" />
+                android:layout_alignParentEnd="true" />-->
         </RelativeLayout>
 
     </ScrollView>

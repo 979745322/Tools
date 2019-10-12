@@ -44,10 +44,8 @@ public class CollectFragment extends AbsBaseFragment {
 
     }
 
-    @Override
-    public void onResume() {
-        super.onResume();
-        LogUtils.d("===========","================");
+
+    public void reset(){
         recyclerView = mRoot.findViewById(R.id.collectjokelist);
         page = 0;
         hasMore = true;
@@ -84,9 +82,9 @@ public class CollectFragment extends AbsBaseFragment {
         if(hasMore){
             List list = SQLite.select().from(Joke.class).orderBy(Joke_Table.id, false).limit(30).offset(page++ * 30).queryList();
             jokeAdapter.addData(list);
-            if(list.size()<30){
+            /*if(list.size()<30){
                 hasMore = false;
-            }
+            }*/
         }
 
 

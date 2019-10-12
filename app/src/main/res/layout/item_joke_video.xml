@@ -30,8 +30,9 @@
     <ImageView
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:src="@drawable/btn_collect"
+
         android:id="@+id/joke_btn_collect"
         android:layout_below="@id/joke_img"
-        android:layout_alignParentEnd="true"
-        android:background="#123456" />
+        android:layout_alignParentEnd="true"/>
 </RelativeLayout>

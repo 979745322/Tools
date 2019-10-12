@@ -6,6 +6,7 @@ import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 import android.widget.VideoView;
 
 import androidx.annotation.NonNull;
@@ -19,8 +20,9 @@ import com.facebook.imagepipeline.request.ImageRequest;
 import com.facebook.imagepipeline.request.ImageRequestBuilder;
 import com.lyg.tools.R;
 import com.lyg.tools.entity.Joke;
+import com.lyg.tools.entity.Joke_Table;
 import com.lyg.tools.entity.OttoStringData;
-import com.lyg.tools.utils.ImageUtils;
+import com.raizlabs.android.dbflow.sql.language.SQLite;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -70,7 +72,17 @@ public class JokeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private View.OnClickListener onClickBtnListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            arrayList.get((Integer) view.getTag()).save();
+            if(arrayList.get((Integer) view.getTag()).getId()==null){
+                arrayList.get((Integer) view.getTag()).save();
+                Toast.makeText(context,"收藏成功",Toast.LENGTH_SHORT).show();
+            }else{
+                SQLite.delete().from(Joke.class).where(Joke_Table.id.eq(arrayList.get((Integer) view.getTag()).getId())).query();
+                int index = (Integer) view.getTag();
+                arrayList.remove(index);
+                Toast.makeText(context,"取消收藏成功",Toast.LENGTH_SHORT).show();
+                notifyDataSetChanged();
+            }
+
         }
     };
 
@@ -153,9 +165,11 @@ public class JokeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     }
 
     public void addData(List<Joke> list) {
-        arrayList.addAll(list);
-        LogUtils.d("List", String.valueOf(arrayList.size()));
-        notifyDataSetChanged();
+        if(list.size()!=0) {
+            arrayList.addAll(list);
+            LogUtils.d("List", String.valueOf(arrayList.size()));
+            notifyDataSetChanged();
+        }
     }
 
 }

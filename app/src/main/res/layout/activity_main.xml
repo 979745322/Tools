@@ -29,7 +29,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
             <TextView
-                android:id="@+id/diary2"
+                android:id="@+id/joke"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -42,20 +42,21 @@
                 android:textStyle="bold"
                 android:layout_alignParentEnd="true"
                  />
-            <!--<TextView
-                android:id="@+id/diary3"
+            <TextView
+                android:id="@+id/history"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:drawableTop="@drawable/diary3"
                 android:gravity="center"
-                android:text="日记"
+                android:text="历史上的今天"
+                android:onClick="history"
                 android:textSize="22sp"
                 android:textStyle="bold"
                 android:layout_below="@id/diary"
                  />
-            <TextView
+            <!--<TextView
                 android:id="@+id/diary4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

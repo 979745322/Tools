@@ -1,30 +1,23 @@
 package com.lyg.tools.joke;
 
 
-import android.os.Bundle;
-
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.erning.common.absbase.AbsBaseFragment;
-import com.erning.common.utils.LogUtils;
 import com.lyg.tools.R;
-import com.lyg.tools.entity.Joke;
-import com.lyg.tools.entity.OttoStringData;
+import com.lyg.tools.diary.entity.Joke;
+import com.lyg.tools.diary.entity.OttoStringData;
 import com.squareup.otto.Subscribe;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-
-import kotlin.Suppress;
 
 /**
  * A simple {@link Fragment} subclass.

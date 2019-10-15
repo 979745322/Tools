@@ -1,4 +1,4 @@
-package com.lyg.tools.entity;
+package com.lyg.tools.diary.entity;
 
 public class OttoStringData {
     private String data;

@@ -19,9 +19,9 @@ import com.facebook.imagepipeline.common.ResizeOptions;
 import com.facebook.imagepipeline.request.ImageRequest;
 import com.facebook.imagepipeline.request.ImageRequestBuilder;
 import com.lyg.tools.R;
-import com.lyg.tools.entity.Joke;
-import com.lyg.tools.entity.Joke_Table;
-import com.lyg.tools.entity.OttoStringData;
+import com.lyg.tools.diary.entity.Joke;
+import com.lyg.tools.diary.entity.Joke_Table;
+import com.lyg.tools.diary.entity.OttoStringData;
 import com.raizlabs.android.dbflow.sql.language.SQLite;
 
 import java.util.ArrayList;

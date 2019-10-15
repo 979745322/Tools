@@ -8,11 +8,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 
 import com.erning.common.absbase.AbsBaseFragment;
-import com.erning.common.utils.LogUtils;
 import com.lyg.tools.R;
-import com.lyg.tools.entity.Joke;
-import com.lyg.tools.entity.Joke_Table;
-import com.lyg.tools.entity.OttoStringData;
+import com.lyg.tools.diary.entity.Joke;
+import com.lyg.tools.diary.entity.Joke_Table;
+import com.lyg.tools.diary.entity.OttoStringData;
 import com.raizlabs.android.dbflow.sql.language.SQLite;
 import com.squareup.otto.Subscribe;
 

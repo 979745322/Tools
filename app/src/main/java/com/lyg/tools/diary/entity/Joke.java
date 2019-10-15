@@ -1,4 +1,4 @@
-package com.lyg.tools.entity;
+package com.lyg.tools.diary.entity;
 
 import com.lyg.tools.db.DBFlowDataBase;
 import com.raizlabs.android.dbflow.annotation.Column;

@@ -15,6 +15,34 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <TextView
+                android:id="@+id/lookBlog"
+                android:onClick="lookBlog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:drawableTop="@drawable/diary4"
+                android:gravity="center"
+                android:text="博客"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/editBlog"
+                android:onClick="editBlog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:drawableTop="@drawable/diary6"
+                android:gravity="center"
+                android:text="博客后台"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_alignParentEnd="true"
+                />
+            <TextView
                 android:id="@+id/diary"
                 android:onClick="diary"
                 android:layout_width="wrap_content"
@@ -27,7 +55,8 @@
                 android:textSize="22sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_below="@id/lookBlog"/>
             <TextView
                 android:id="@+id/joke"
                 android:layout_width="wrap_content"
@@ -41,6 +70,7 @@
                 android:textSize="22sp"
                 android:textStyle="bold"
                 android:layout_alignParentEnd="true"
+                android:layout_below="@id/editBlog"
                  />
             <TextView
                 android:id="@+id/history"

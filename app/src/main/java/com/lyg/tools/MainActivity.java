@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.lyg.tools.blog.editblog.EditBlogActivity;
+import com.lyg.tools.blog.lookblog.LookBlogActivity;
 import com.lyg.tools.diary.Password;
 import com.lyg.tools.history.HistoryActivity;
 import com.lyg.tools.joke.JokeActivity;
@@ -19,6 +21,22 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * 查看博客功能
+     * @param view
+     */
+    public void lookBlog(View view) {
+        // 进入日记密码界面
+        startActivity(new Intent(this, LookBlogActivity.class));
+    }
+    /**
+     * 编辑博客功能
+     * @param view
+     */
+    public void editBlog(View view) {
+        // 进入日记密码界面
+        startActivity(new Intent(this, EditBlogActivity.class));
+    }
     /**
      * 日记功能
      * @param view

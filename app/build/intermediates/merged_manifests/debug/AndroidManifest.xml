@@ -26,6 +26,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.lyg.tools.blog.lookblog.LookBlogActivity" />
+        <activity android:name="com.lyg.tools.blog.editblog.EditBlogActivity" />
         <activity
             android:name="com.lyg.tools.history.HistoryActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />

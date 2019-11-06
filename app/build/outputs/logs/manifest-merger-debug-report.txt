@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from E:\android\Tools\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from E:\android\Tools\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from E:\android\Tools\app\src\main\AndroidManifest.xml:2:1-42:12
+ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from E:\android\Tools\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from E:\android\Tools\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from E:\android\Tools\app\src\main\AndroidManifest.xml:2:1-45:12
 MERGED from [com.facebook.fresco:fresco:2.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\70d2b8f1f97d9e26af7741af99810803\AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:animated-gif:2.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\9cfd18b78a7822121dd293c2ca6f2783\AndroidManifest.xml:2:1-9:12
 MERGED from [:common] E:\android\Tools\common\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-22:12
@@ -70,20 +70,20 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Administrator
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\d9f7df037935458bbebbda6441a616f9\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\bf195a77fc822eb3df547e4c1b1c25c0\AndroidManifest.xml:17:1-22:12
 MERGED from [org.jetbrains.anko:anko-coroutines:0.10.8] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\b2c4e557e1a2a673ded4247eb8690b67\AndroidManifest.xml:2:1-13:12
-INJECTED from E:\android\Tools\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from E:\android\Tools\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from E:\android\Tools\app\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from E:\android\Tools\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from E:\android\Tools\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from E:\android\Tools\app\src\main\AndroidManifest.xml:2:1-45:12
 	package
 		ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:3:5-28
 		INJECTED from E:\android\Tools\app\src\main\AndroidManifest.xml
 		INJECTED from E:\android\Tools\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from E:\android\Tools\app\src\main\AndroidManifest.xml
-		ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:2:1-42:12
+		ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:2:1-45:12
 		INJECTED from E:\android\Tools\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from E:\android\Tools\app\src\main\AndroidManifest.xml
-		ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:2:1-42:12
+		ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:2:1-45:12
 		INJECTED from E:\android\Tools\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:2:11-69
@@ -110,7 +110,7 @@ MERGED from [:common] E:\android\Tools\common\build\intermediates\library_manife
 	android:name
 		ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:8:22-78
 application
-ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:10:5-40:19
+ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:10:5-43:19
 MERGED from [:common] E:\android\Tools\common\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:5-20:19
 MERGED from [:common] E:\android\Tools\common\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:5-20:19
 MERGED from [com.github.Raizlabs.DBFlow:dbflow:4.2.4] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\05f39f0d4becab091aa718a78484a320\AndroidManifest.xml:11:5-20
@@ -167,54 +167,62 @@ MERGED from [org.jetbrains.anko:anko-coroutines:0.10.8] C:\Users\Administrator\.
 		ADDED from [:common] E:\android\Tools\common\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:9-44
 	android:name
 		ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:11:9-28
+activity#com.lyg.tools.blog.lookblog.LookBlogActivity
+ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:19:9-77
+	android:name
+		ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:19:19-65
+activity#com.lyg.tools.blog.editblog.EditBlogActivity
+ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:20:9-68
+	android:name
+		ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:20:19-65
 activity#com.lyg.tools.history.HistoryActivity
-ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:19:9-20:75
+ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:21:9-23:66
 	android:theme
-		ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:20:13-63
+		ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:23:13-63
 	android:name
-		ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:19:19-58
+		ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:22:13-52
 uses-library#org.apache.http.legacy
-ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:22:9-24:40
+ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:25:9-27:40
 	android:required
-		ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:24:13-37
+		ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:27:13-37
 	android:name
-		ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:23:13-50
+		ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:26:13-50
 activity#com.lyg.tools.joke.JokeActivity
-ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:26:9-55
+ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:29:9-55
 	android:name
-		ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:26:19-52
+		ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:29:19-52
 activity#com.lyg.tools.joke.ImageActivity
-ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:27:9-29:66
+ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:30:9-32:66
 	android:theme
-		ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:29:13-63
+		ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:32:13-63
 	android:name
-		ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:28:13-47
+		ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:31:13-47
 activity#com.lyg.tools.diary.DiaryEdit
-ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:30:9-53
+ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:33:9-53
 	android:name
-		ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:30:19-50
+		ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:33:19-50
 activity#com.lyg.tools.diary.DiaryList
-ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:31:9-53
+ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:34:9-53
 	android:name
-		ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:31:19-50
+		ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:34:19-50
 activity#com.lyg.tools.diary.Password
-ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:32:9-52
+ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:35:9-52
 	android:name
-		ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:32:19-49
+		ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:35:19-49
 activity#com.lyg.tools.MainActivity
-ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:33:9-39:20
+ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:36:9-42:20
 	android:name
-		ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:33:19-47
+		ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:36:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:34:13-38:29
+ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:37:13-41:29
 action#android.intent.action.MAIN
-ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:35:17-69
+ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:38:17-69
 	android:name
-		ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:35:25-66
+		ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:38:25-66
 category#android.intent.category.LAUNCHER
-ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:37:17-77
+ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:40:17-77
 	android:name
-		ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:37:27-74
+		ADDED from E:\android\Tools\app\src\main\AndroidManifest.xml:40:27-74
 uses-sdk
 INJECTED from E:\android\Tools\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from E:\android\Tools\app\src\main\AndroidManifest.xml

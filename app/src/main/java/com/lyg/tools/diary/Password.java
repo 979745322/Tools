@@ -46,14 +46,14 @@ public class Password extends AppCompatActivity {
         mCancellationSignal = new CancellationSignal();
         manager = (FingerprintManager) this.getSystemService(Context.FINGERPRINT_SERVICE);
         mKeyManager = (KeyguardManager) this.getSystemService(Context.KEYGUARD_SERVICE);
-        if (isFinger()) {
-//            Toast.makeText(Password.this, "请进行指纹识别", Toast.LENGTH_LONG).show();
-            Log(TAG, "keyi");
-            startListening(null);
-        }else if(pwd.equals("")&&getIntent().getStringExtra("struts")==null){ // 如果没有设置密码，直接进入日记列表页面
+        if(pwd.equals("")&&getIntent().getStringExtra("struts")==null){ // 如果没有设置密码，直接进入日记列表页面
             // 进日记列表页面
             startActivity(new Intent(this,DiaryList.class));
             finish();
+        }else if (isFinger()) {
+//            Toast.makeText(Password.this, "请进行指纹识别", Toast.LENGTH_LONG).show();
+            Log(TAG, "keyi");
+            startListening(null);
         }
         editText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
